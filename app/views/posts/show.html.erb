@@ -1,0 +1,24 @@
+<div class="container">
+<%= image_tag @post.image.url(:medium) %>
+<h1 class="title">
+<%= @post.title %>
+</h1>
+
+<p class="date">
+Submitted <%= time_ago_in_words(@post.created_at) %>Ago
+</p>
+</div>
+
+ <div class="container">
+<p class = "body">
+<%= @post.body %>
+</p>
+
+<div id="comments">
+<h2><%=@post.comments.count %> Comments</h2>
+<%= render @post.comments %>
+
+<h3> Add a comment </h3>
+<%= render "comments/form" %>
+</div>
+</div>
