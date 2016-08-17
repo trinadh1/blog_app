@@ -1,16 +1,18 @@
 <div class="container">
  <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
-<%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Posts" ,id:'name'%>
 <button type %= submit_tag class="btn btn-primary">Search</button>
 <% end %>
 </div>
 
 <div class="container">
+<div id="search">
 <% @posts.each do |post| %>
 <div class="post_wrapper">
 <h2 class="title"><%= link_to post.title, post %></h2>
 <p class="date"><%= post.created_at.strftime("%B, %d, %Y") %></p>
 </div>
 <% end %>
+</div>
 </div>
 
