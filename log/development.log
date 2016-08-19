@@ -13649,3 +13649,2809 @@ Processing by PostsController#index as HTML
   Rendered posts/index.html.erb within layouts/application (4.5ms)
   Rendered layouts/_header.html.erb (0.7ms)
 Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-17 23:53:28 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (21.0ms)
+  Rendered layouts/_header.html.erb (5.3ms)
+Completed 200 OK in 635ms (Views: 599.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-17 23:53:29 +0530
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-17 23:53:31 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.5ms)
+  Rendered posts/show.html.erb within layouts/application (178.9ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 280ms (Views: 214.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-17 23:53:36 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (1.0ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (32.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2016-08-17 23:53:44 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 43.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2016-08-17 23:53:50 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 3]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-17 23:56:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+Completed 200 OK in 279ms (Views: 265.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-17 23:56:11 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.8ms)
+  Rendered posts/show.html.erb within layouts/application (63.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 116ms (Views: 98.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-17 23:56:13 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-17 23:56:15 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (33.9ms)
+  Rendered posts/new.html.erb within layouts/application (35.3ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `simple_form_for' for #<#<Class:0x00000004b23140>:0x007fa739c63580>):
+    1: <%=simple_form_for @post, html: { multipart: true } do |f| %>
+    2:     <p>
+    3: 	<%= f.input :title %><br>		
+    4: 	<%= f.text_field :title %>
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___1567087951929873189_70178105593800'
+  app/views/posts/new.html.erb:4:in `_app_views_posts_new_html_erb__4105589114515386497_70178102772860'
+
+
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.0ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (46.7ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (21.7ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (48.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-17 23:56:34 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (23.2ms)
+  Rendered posts/new.html.erb within layouts/application (24.2ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x007fa738eeacf0>):
+    1: <%= form_for @post, html: { multipart: true } do |f| %>
+    2:     <p>
+    3: 	<%= f.input :title %><br>		
+    4: 	<%= f.text_field :title %>
+    5: 	</p>
+    6: 
+  app/views/posts/_form.html.erb:3:in `block in _app_views_posts__form_html_erb___1567087951929873189_70178095748720'
+  app/views/posts/_form.html.erb:1:in `_app_views_posts__form_html_erb___1567087951929873189_70178095748720'
+  app/views/posts/new.html.erb:4:in `_app_views_posts_new_html_erb__4105589114515386497_70178102772860'
+
+
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.5ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (15.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-17 23:56:51 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (89.6ms)
+  Rendered posts/new.html.erb within layouts/application (90.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 109ms (Views: 108.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:52 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:52 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:52 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:52 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:52 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:52 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:52 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:52 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-17 23:56:53 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 01:56:55 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 200 OK in 270ms (Views: 256.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 01:57:00 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.9ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 02:02:37 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (3.8ms)
+Completed 200 OK in 278ms (Views: 265.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 16:54:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (34.8ms)
+  Rendered layouts/_header.html.erb (4.5ms)
+Completed 200 OK in 534ms (Views: 496.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 16:54:11 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (15.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (216.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 287ms (Views: 258.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:19:09 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (12.2ms)
+  Rendered layouts/_header.html.erb (3.7ms)
+Completed 200 OK in 274ms (Views: 252.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:19:12 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (55.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 111ms (Views: 88.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:19:26 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-19 17:19:40 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 44ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-19 17:23:27 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/tri/workspace/blogs/app/views/devise/registrations/new.html.erb:20: syntax error, unexpected keyword_class, expecting ')'
+...pend=( f.submit "Sign up" class: "btn btn-primary" );@output...
+...                               ^):
+  app/views/devise/registrations/new.html.erb:20: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.9ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.8ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (38.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-19 17:23:59 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:23:59 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:23:59 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:23:59 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:23:59 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:23:59 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:23:59 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:23:59 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:00 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:24:44 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:25:00 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:25:07 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+Completed 200 OK in 43ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:25:40 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x58+ymvVXx0+rN/Fm5ttoGPJmlWxEr4aHR0Mx3Ymw5a3pN5QH/VFmwTksgPVsz81EwGEAVHctZ9HNZ06th493Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x58+ymvVXx0+rN/Fm5ttoGPJmlWxEr4aHR0Mx3Ymw5a3pN5QH/VFmwTksgPVsz81EwGEAVHctZ9HNZ06th493Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-19 17:25:51 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2016-08-19 17:25:52 +0530
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+oCYp2uIJADXcdjKp9j+CkLdUgbGJLF5GPs49GELtn+Ku3g9H6g+hu05tQzp8KyfMhVMUibquvxC06kJoTNINA==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 49ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:26:16 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:26:37 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (73.2ms)
+  Rendered posts/new.html.erb within layouts/application (75.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 100ms (Views: 99.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.6ms)
+  Rendered posts/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:31:27 +0530
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.0ms)
+  Rendered posts/new.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 31ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:32:43 +0530
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:33:09 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.1ms)
+  Rendered posts/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/tri/workspace/blogs/app/views/posts/_form.html.erb:16: syntax error, unexpected ')'
+...append=( f.file_field :image, );@output_buffer.safe_append='
+...                               ^
+/home/tri/workspace/blogs/app/views/posts/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;	 end 
+         	    ^
+/home/tri/workspace/blogs/app/views/posts/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+/home/tri/workspace/blogs/app/views/posts/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/posts/_form.html.erb:16: syntax error, unexpected ')'
+  app/views/posts/_form.html.erb:22: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/_form.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/posts/_form.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  app/views/posts/new.html.erb:4:in `_app_views_posts_new_html_erb__3864476940437692061_70047412564100'
+
+
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.6ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.5ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.9ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.0ms)
+  Rendered posts/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:33:17 +0530
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.1ms)
+  Rendered posts/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:27 +0530
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:34:39 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (1.7ms)
+  Rendered posts/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:39 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:39 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:39 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:39 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:39 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:39 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:40 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:34:40 +0530
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (5.0ms)
+  Rendered posts/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:21 +0530
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (2.9ms)
+  Rendered posts/new.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 23ms (Views: 22.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:35:50 +0530
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.2ms)
+  Rendered posts/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:03 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:36:05 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.7ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:36:07 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (6.9ms)
+  Rendered posts/new.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:36:10 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:36:11 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:36:42 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+Completed 200 OK in 43ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:38:45 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:18 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:39:31 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:13 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:40:46 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:18 +0530
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-19 17:41:30 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:41:40 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 43.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (17.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:41:54 +0530
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:41:56 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (5.3ms)
+  Rendered posts/new.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:42:05 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:42:52 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:43:27 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:44:38 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 32ms (Views: 31.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:45:13 +0530
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-19 17:45:53 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (1.1ms)
+  Rendered posts/show.html.erb within layouts/application (41.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 128ms (Views: 62.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:47:47 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:47:48 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:47:48 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:47:48 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:47:48 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:47:48 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:47:48 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:47:48 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:47:48 +0530
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-19 17:47:49 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:24 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:48:35 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 17:48:36 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.9ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (26.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (8.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:48:51 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 17:50:33 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:34 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:34 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:34 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:34 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:34 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:34 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:34 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:34 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:50:47 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (0.6ms)
+  Rendered posts/show.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:54:47 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:55:09 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 17:55:13 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.7ms)
+  Rendered posts/new.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 17:55:15 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:55:16 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-19 17:55:17 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 17:55:22 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (11.1ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2016-08-19 17:55:53 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 6]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 6]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2016-08-19 17:55:58 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:58:58 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 17:59:01 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (13.0ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.3ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 17:59:50 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.3ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:00:00 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:23 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:25 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (1.0ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:36 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:01:51 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:52 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:52 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:52 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:52 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:52 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:52 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:52 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:52 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:01:57 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:58 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:58 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:58 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:58 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:58 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:58 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:58 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:01:58 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:38 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 33.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.2ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:02:40 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:03:51 +0530
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:05:15 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 18:05:29 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2016-08-19 18:05:30 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 18:05:46 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.5ms)
+  Rendered posts/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 18:06:14 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.4ms)
+  Rendered posts/new.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 18:06:16 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (4.3ms)
+  Rendered posts/new.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:06:17 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-19 18:06:18 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (9.7ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:20 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:06:24 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:06:25 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered comments/_form.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:06:31 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:06:38 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 39.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:07:46 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:22 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:34 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:08:50 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:03 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 30ms (Views: 28.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:09:16 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:12:29 +0530
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/tri/workspace/blogs/app/views/posts/index.html.erb:5: syntax error, unexpected keyword_class, expecting ')'
+...nd=( submit_tag  "Search" class: "btn btn-primary" );@output...
+...                               ^):
+  app/views/posts/index.html.erb:5: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.9ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (28.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:12:48 +0530
+Processing by PostsController#index as HTML
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/tri/workspace/blogs/app/views/posts/index.html.erb:5: syntax error, unexpected keyword_class, expecting ')'
+...=( f.submit_tag  "Search" class: "btn btn-primary" );@output...
+...                               ^):
+  app/views/posts/index.html.erb:5: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (22.6ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:13:06 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (21.1ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00000004060a00>:0x00000001646e90>):
+    2: <div class= "col-md-2">
+    3:  <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+    4: <%= text_field_tag :search, params[:search], placeholder: "Search Posts" ,id:'name', class: 'form-control' %>
+    5: <%= f.submit_tag  "Search", class: "btn btn-primary" %>
+    6: 
+    7:     <%= f.submit "Log in",class: "btn btn-primary" %>
+    8: <% end %>
+  app/views/posts/index.html.erb:5:in `block in _app_views_posts_index_html_erb__4183791404247680440_10724100'
+  app/views/posts/index.html.erb:3:in `_app_views_posts_index_html_erb__4183791404247680440_10724100'
+
+
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.1ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (27.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:13:20 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (22.5ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00000004060a00>:0x007f6a5cfd0430>):
+    2: <div class= "col-md-2">
+    3:  <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
+    4: <%= text_field_tag :search, params[:search], placeholder: "Search Posts" ,id:'name', class: 'form-control' %>
+    5: <%= f.submit_tag  "Search", class: "btn btn-primary" %>
+    6: <% end %>
+    7: </div>
+    8: </div>
+  app/views/posts/index.html.erb:5:in `block in _app_views_posts_index_html_erb__4183791404247680440_70047401651360'
+  app/views/posts/index.html.erb:3:in `_app_views_posts_index_html_erb__4183791404247680440_70047401651360'
+
+
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.7ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/tri/.rvm/gems/ruby-2.2.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (26.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:13:28 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:14:09 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:10 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:10 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:10 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:10 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:10 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:10 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:10 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:10 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+Completed 200 OK in 37ms (Views: 35.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:32 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:14:42 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 19ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:43 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:43 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:43 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:43 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:43 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:43 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:43 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:14:43 +0530
+
+
+Started GET "/posts/10" for 127.0.0.1 at 2016-08-19 18:14:57 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 10]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (9.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 36ms (Views: 33.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/9" for 127.0.0.1 at 2016-08-19 18:15:01 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 9]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 9]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 9]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered comments/_form.html.erb (0.3ms)
+  Rendered posts/show.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2016-08-19 18:15:03 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 7]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 7]]
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered comments/_form.html.erb (0.5ms)
+  Rendered posts/show.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2016-08-19 18:15:08 +0530
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "comments" WHERE "comments"."post_id" = ?[0m  [["post_id", 4]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = ?  [["post_id", 4]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (0.6ms)
+  Rendered posts/show.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 39ms (Views: 35.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:15:16 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.6ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:15:33 +0530
+
+
+Started GET "/posts?utf8=%E2%9C%93&search=Mumbai&commit=Search" for 127.0.0.1 at 2016-08-19 18:15:51 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"Mumbai", "commit"=>"Search"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE (title LIKE '%Mumbai%')  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&search=chennai&commit=Search" for 127.0.0.1 at 2016-08-19 18:16:01 +0530
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"chennai", "commit"=>"Search"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts" WHERE (title LIKE '%chennai%')  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:16:06 +0530
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+
+
+Started GET "/assets/jquerylivefilter.self-896a191639351b312607d620170573f3ee440c48b81dcb4c32592e3daeb7a831.js?body=1" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+
+
+Started GET "/assets/jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+
+
+Started GET "/assets/posts.self-f5dd5a9a56ea75e79c77994920f464d9bdf38cb2a6234c1d6191d8a85c20387c.js?body=1" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for 127.0.0.1 at 2016-08-19 18:16:20 +0530
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2016-08-19 18:16:26 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2016-08-19 18:16:28 +0530
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.4ms)
+  Rendered posts/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_header.html.erb (0.6ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)

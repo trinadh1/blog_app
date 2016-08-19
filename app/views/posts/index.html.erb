@@ -1,7 +1,7 @@
 <div class="container">
  <%= form_tag(posts_path, :method => "get", id: "search-form") do %>
-<%= text_field_tag :search, params[:search], placeholder: "Search Posts" ,id:'name'%>
-<button type %= submit_tag class="btn btn-primary">Search</button>
+<%= text_field_tag :search, params[:search], placeholder: "Search Posts" ,id:'name' %>
+<%= submit_tag  "Search", class: "btn btn-primary" %>
 <% end %>
 </div>
 
