@@ -10,6 +10,7 @@ gem 'pg'
 gem 'bootstrap-sass', '~> 3.3.6'
 # For image uploads
 gem "paperclip","~> 5.0.0"
+
 #for page reloading
 gem 'jquery-turbolinks'
 #For Creating users
